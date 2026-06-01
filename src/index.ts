@@ -1,4 +1,3 @@
+import { MySDK } from "./client";
 
-export const hello = () => {
-  console.log("Hello");
-};
+export default new MySDK();
