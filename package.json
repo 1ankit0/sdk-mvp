@@ -2,7 +2,8 @@
   "name": "sdk-mvp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup src/index.ts --dts"
@@ -19,8 +20,15 @@
     "url": "https://github.com/1ankit0/sdk-mvp/issues"
   },
   "homepage": "https://github.com/1ankit0/sdk-mvp#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.29.2"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.70"
+  },
   "devDependencies": {
     "tsup": "^8.5.1",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
 }

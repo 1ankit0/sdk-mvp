@@ -1,3 +1,7 @@
-import { MySDK } from "./client";
+import {MySDK} from './client';
 
-export default new MySDK();
+const sdk = new MySDK();
+
+export default sdk;
+export {MySDKPopup} from './ui/MySDKPopup';
+export type {MySDKConfig, MySDKUIState} from './types';
